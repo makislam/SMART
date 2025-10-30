@@ -66,14 +66,14 @@ def visualize_config(config_name, show_inertia=False):
     fig.update_layout(
         title=f"{config['name']} - Joint Configuration",
         scene=dict(
-            xaxis=dict(range=[-0.5, 0.5], title='X (m)'),
-            yaxis=dict(range=[-0.5, 0.5], title='Y (m)'),
-            zaxis=dict(range=[0, 0.7], title='Z (m)'),
+            xaxis=dict(range=[-0.25, 0.25], title='X (m)'),
+            yaxis=dict(range=[-0.25, 0.25], title='Y (m)'),
+            zaxis=dict(range=[0, 0.5], title='Z (m)'),
             aspectmode='manual',
-            aspectratio=dict(x=1, y=1, z=1.2),
+            aspectratio=dict(x=1, y=1, z=1),
             camera=dict(
-                eye=dict(x=1.5, y=1.5, z=1.2),
-                center=dict(x=0, y=0, z=0.3)
+                eye=dict(x=1.3, y=1.3, z=1.0),
+                center=dict(x=0, y=0, z=0.25)
             )
         ),
         showlegend=False,

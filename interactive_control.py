@@ -386,31 +386,31 @@ def update_robot(*args):
         },
         scene=dict(
             xaxis=dict(
-                range=[-0.5, 0.5],
+                range=[-0.25, 0.25],
                 title='X (m)',
                 backgroundcolor=COLORS['background'],
                 gridcolor=COLORS['border'],
                 showbackground=True
             ),
             yaxis=dict(
-                range=[-0.5, 0.5],
+                range=[-0.25, 0.25],
                 title='Y (m)',
                 backgroundcolor=COLORS['background'],
                 gridcolor=COLORS['border'],
                 showbackground=True
             ),
             zaxis=dict(
-                range=[0, 0.7],
+                range=[0, 0.5],
                 title='Z (m)',
                 backgroundcolor=COLORS['background'],
                 gridcolor=COLORS['border'],
                 showbackground=True
             ),
             aspectmode='manual',
-            aspectratio=dict(x=1, y=1, z=1.2),
+            aspectratio=dict(x=1, y=1, z=1),
             camera=dict(
-                eye=dict(x=1.5, y=1.5, z=1.2),
-                center=dict(x=0, y=0, z=0.3)
+                eye=dict(x=1.3, y=1.3, z=1.0),
+                center=dict(x=0, y=0, z=0.25)
             )
         ),
         showlegend=False,
